@@ -1,4 +1,4 @@
-from django.urls import path
+"""Маршруты контента обслуживаются отдельным приложением api."""
 
 urlpatterns = [
 ]

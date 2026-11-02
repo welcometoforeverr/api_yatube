@@ -1,9 +1,12 @@
+"""Регистрация моделей контента в административной панели."""
 from django.contrib import admin
 
 from .models import Comment, Group, Post
 
 
 class PostAdmin(admin.ModelAdmin):
+    """Настроить поиск, фильтры и список публикаций."""
+
     list_display = ('pk', 'text', 'pub_date', 'author')
     search_fields = ('text',)
     list_filter = ('pub_date',)
